@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Click to Call Extension</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/titatoggle-dist.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/simplebar.min.css" rel="stylesheet" />
+    <link href="assets/css/extension.css" rel="stylesheet" />
+    <link href="assets/css/placeholder-animation.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="tab1" class="card tabs">
+        <div class="card-body ext-body">
+            <div class="logo text-center">
+                <img src="assets/images/logo.png" alt="" width="120">
+            </div>
+            <div class="Login initial-tabs container">
+                <div class="msg"></div>
+                <form name="login_form" id="login_form">
+                    <fieldset class="formRow">
+                        <div class="form-group formRow--item">
+                            <label for="account-key" class="formRow--input-wrapper js-inputWrapper">
+                                <input type="text" name="account-key" class="form-control formRow--input js-input"
+                                    id="account-key" placeholder="Account key" autocomplete="on">
+                            </label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="formRow">
+                        <div class="form-group formRow--item">
+                            <label for="email" class="formRow--input-wrapper js-inputWrapper">
+                                <input type="text" name="email" class="form-control formRow--input js-input" id="email"
+                                    placeholder="Email" autocomplete="on">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="formRow">
+                        <div class="form-group formRow--item">
+                            <label for="password" class="formRow--input-wrapper js-inputWrapper">
+                                <input type="password" name="password" class="form-control formRow--input js-input"
+                                    id="password" placeholder="Password" autocomplete="on">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-info">Authentic</button>
+                    </div>
+                </form>
+
+            </div>
+            <footer class="text-center">
+                <hr>
+                <!-- <p>Powered by <a target="_blank" class="company_url" href="javascript:void(0)">chrome web app</a></p> -->
+            </footer>
+        </div>
+    </div>
+
+    <div class="cookie-result">
+        <h4>Result: </h4>
+        <p>Status: <span class="c_user"></span></p>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="config.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/placeholder-animation.js"></script>
+</body>
+
+</html>

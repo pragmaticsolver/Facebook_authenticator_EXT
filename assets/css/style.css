@@ -1,0 +1,13 @@
+.left,.right{padding:0;}
+.custom-control-label {position: absolute;}
+span{ font-weight: 400;color: gray;}
+.toggle-extension .col-6{padding:0;}
+span.spn2 {
+    margin:0px;padding-left:7px;
+}
+.toggle-container .col-3{padding:0;}
+.toggle-container .col-2{padding:0}
+.toggle-extension h6{color: gray;}
+.col-3.text-right.text {
+    padding-right: 8px;
+}

